@@ -55,8 +55,7 @@
 
 .home-links {
   font-size: 0.95em;
-  margin-bottom: 1.4rem;
-  color: rgba(0,0,0,0.70);
+  color: rgba(0,0,0,0.68);
 }
 
 .home-links a {
@@ -134,30 +133,55 @@ h1, h2, h3 {
 }
 
 .abstract-content {
-  display: none;              /* keep hidden by default */
+  display: none;
   white-space: normal;
   font-family: inherit;
-  font-size: 0.95em;
-  line-height: 1.5;
-  color: #444;
-  margin-top: 0.4em;
-  margin-left: 0.2em;
+  font-size: 0.9em;
+  line-height: 1.45;
+  color: #555;
+  margin-top: 0.45em;
+  margin-left: 0;
+  padding-left: 0.8rem;
+  border-left: 2px solid rgba(0,0,0,0.12);
 }
 
 
-/* Slight spacing between entries */
-p {
-  margin-bottom: 0.4rem;
-}
+
 
 /* --- Navbar: quieter, more academic --- */
 .navbar, .navbar a, .navbar-brand {
   font-family: var(--serif) !important;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .navbar {
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.navbar-container,
+.navbar-collapse {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+/* --- Navbar: sticky --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+main {
+  margin-top: 64px;
 }
 
 .anchorjs-link {
